@@ -74,14 +74,3 @@ audio{width:100%;}
 .article table td a{
     color: #a6e1ec;
 }
-
-
-.number1 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 10em;
-    width: 10em;
-    background-color: white;
-}
-
