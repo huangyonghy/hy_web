@@ -1,0 +1,87 @@
+body {
+    padding-top: 2em;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: white;
+}
+
+#section1 {
+    background-color: gray;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+#section2 {
+    background-color: #4cae4c;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+#section3 {
+    background-color: #009688;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+#section3 .link {
+    font-style: italic;
+    font-size: smaller;
+    color: #a94442;
+}
+
+
+/* music */
+.music {
+    /*list-style: none;*/
+    text-align: left;
+    color: white;
+}
+
+.musicList {
+    display: inline-block;
+    color: green;
+    padding: 0.5em 0 0 2em;
+    font-family: "Times New Roman";
+    font-size: 1.5em;
+}
+
+.musicList:hover {
+
+    background-color: #a6e1ec;
+}
+
+#musicControl { background-color: gray; margin: 1em auto -2em}
+audio{width:100%;}
+
+
+/* article */
+.article {
+    text-align: center;
+}
+
+.article table {
+    border: solid 0.2em black;
+}
+
+.article table th {
+    border: solid 0.2em black;
+    text-align: center;
+}
+
+.article table td {
+    border: solid 0.2em black;
+}
+
+.article table td a{
+    color: #a6e1ec;
+}
+
+
+.number1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 10em;
+    width: 10em;
+    background-color: white;
+}
+

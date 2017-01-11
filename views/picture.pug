@@ -1,0 +1,18 @@
+//
+    ul.picture
+        img(src="/images/bbs.jpg" alt="Hahaha" width="200" height="250")
+        img(src="/images/Stephanie.jpg" alt="Hahaha" width="100" height="120")
+div
+    .row
+        each name, index in image_files
+            div(class="col-md-4 text-center")
+                img(src='/images/'+name alt='Hahaha'  width="250" height="250")
+            if (index+1)%3 == 0
+                .row
+
+form(method='post', action='/media/upload_image', enctype='multipart/form-data')
+            .row
+                  div(class="col-md-2 col-md-offset-4")
+                      input(name='btnUp', type='submit',value='Upload')
+                  div(class="col-md-4 text-left")
+                      input(name='inputFile', type='file', multiple='mutiple')

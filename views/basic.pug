@@ -1,0 +1,28 @@
+doctype html
+html(lang=en)
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv=Content-Type content="text/html;charset=utf-8")
+        meta(http-equiv=X-UA-Compatible content="IE=edge")
+        title= title
+        link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+        link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+        link(rel='stylesheet', href='/stylesheets/basic.css')
+
+    body(data-spy='scroll' data-target='#scrollBar')
+        block header
+        block content
+        block float_div
+        #footer.bottom.text-center
+            footer
+                p.
+                   &copy; 2016. All Rights Reversed
+                a(href='/users' style='color: red') User List
+                if (!user)
+                    a(href='/login' style='color: green') Log In
+                else
+                    a(href='/logout' style='color: green') Log Out
+        script(type='text/javascript', src='/javascripts/jquery-3.1.1.min.js')
+        script(type='text/javascript', src='/javascripts/bootstrap.js')
+        script(type="text/javascript", src="/javascripts/pagination.js")
+        script(type='text/javascript', src='/javascripts/common.js')

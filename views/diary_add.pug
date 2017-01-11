@@ -1,0 +1,14 @@
+extends basic
+
+block content
+    #main_body.text-center
+        h2 Add article by #{users}
+        form(action='/diary/add' method='post')
+            input(type="text" name="name", value=users, style='display: none')
+            p.text-left Title:
+                input(type="text" name="title")
+            br
+            p.text-left Content:
+            textarea(name='content' rows="10" cols="150")
+            <br>
+            button(type='submit') Submit

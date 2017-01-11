@@ -1,0 +1,7 @@
+extends basic
+
+block content
+    #login_body.container.text-center
+        ol
+            each passwd, name in users
+                li.text-left=name + ': ' + passwd

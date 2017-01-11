@@ -1,0 +1,18 @@
+input(type="hidden" id="showPerPage" value="0")
+input(type="hidden" id="currentPage" value="0")
+
+div#music_page_container
+    each name, index in music_files
+        .item(class="musicList" src="/music/"+name+".mp3" onclick="play(this)").text-left #{index+1} #{name}
+.text-center
+    ul(class="pagination navigationContainer")
+
+form(method='post', action='/media/upload_music', enctype='multipart/form-data')
+    .row
+          div(class="col-md-2 col-md-offset-4")
+              input(name='btnUp', type='submit',value='Upload')
+          div(class="col-md-4 text-left")
+              input(name='inputFile', type='file', multiple='mutiple')
+
+div#musicControl
+    audio(id="musicAudio" controls="controls" src="/music/"+music_files[0] +".mp3" type="audio/mpeg" loop="loop")

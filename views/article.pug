@@ -1,0 +1,14 @@
+//
+   Created by huangyong on 1/12/16.
+.container.article
+    table.table
+        tr
+            th Title
+            th Author
+            th Date
+        each article, index in articles
+            tr
+                td
+                    a(href="diary?date="+article.date target="blank").text-center=article.title
+                td=article.user_name
+                td=article.date.toDateString()

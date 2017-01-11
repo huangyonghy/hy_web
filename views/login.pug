@@ -1,0 +1,22 @@
+extends basic
+
+block content
+  #main_body.text-center
+      form(action=action method='post')
+          .row
+              div(class="col-md-4 col-md-offset-2 text-right") User Name:
+              div(class="col-md-4 text-left")
+                  input(type="text" name="username")
+          br
+          .row
+              div(class="col-md-4 col-md-offset-2 text-right") Password:
+              div(class="col-md-4 text-left")
+                  input(type="password" name="password")
+          <br>
+          .row
+              if register
+                div(class="col-md-12 btn-block")
+                     button(type="submit") Register
+              else
+                div(class="col-md-12 btn-block")
+                      button(type="submit") Login

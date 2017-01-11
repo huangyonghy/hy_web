@@ -1,0 +1,45 @@
+body {
+    background-color: #afd9ee;
+}
+
+h1 {
+    font-family: "Times New Roman";
+    color: #AA0000;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.headerInfo {
+    color: yellow;
+    margin-right: 10px;
+}
+
+.btn {
+    color: black;
+    font-style: oblique;
+    margin-left: 20px;
+}
+
+table {
+    width: 600px;
+    height: 600px;
+    border: orange 2px solid;
+    margin: 20px auto 20px auto;
+}
+
+td {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border: white 2px solid;
+    color: white;
+    font-size: 100px;
+}
+
+#stateInfo {
+    visibility: hidden;
+}

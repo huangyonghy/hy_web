@@ -1,0 +1,40 @@
+extends basic
+
+block header
+    link(rel='stylesheet', href='/stylesheets/index.css')
+    .navbar.navbar-fixed-top.navbar-inverse#scrollBar
+        .container
+            .navbar-header
+                button(type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#myNavbar'
+                    aria-expanded='false' aria-controls='navbar')
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href='/') Huangyong
+            .navbar-collapse.collapse#myNavbar
+                ul.nav.navbar-nav.navbar-right
+                    li.active
+                        a(href='#section1') Music
+                    li
+                        a(href='#section2') Picture
+                    li
+                        a(href='#section3') Article
+
+block content
+    #section1.container
+        .page-header
+            h2.text-center Music
+        include music
+    #section2.container
+        .page-header
+            h2.text-center Picture
+        include picture
+    #section3.container
+        .page-header
+            h2.text-center Article
+                a(href='/diary/add').link --Add New
+        include article
+
+block float_div
+    .number1.text-center Hello
