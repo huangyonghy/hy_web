@@ -1,4 +1,4 @@
 # hy_web
-Use express framework to build my own web
+Use express framework to build personal web
 
-The misic and picture are used for demo, no offence!
+The musics and pictures source are used for demo, no offence!
