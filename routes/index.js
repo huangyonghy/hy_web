@@ -13,6 +13,12 @@ router.get('/', function (req, res, next) {
     });
 });
 
+router.post('/', function (req, res, next) {
+    console.log(req.body);
+    var result = {hello: "hello Back"};
+    res.send(JSON.stringify(result));
+});
+
 function getFiles(fn) {
     fs.readdir(path.join(__dirname, '../public/music/'), function (err, files) {
         if (err) {
